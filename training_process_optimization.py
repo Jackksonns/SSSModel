@@ -55,6 +55,8 @@ from torch.utils.data import DataLoader, Subset
 from sklearn.model_selection import KFold
 from torchvision import transforms, datasets
 import ttach as tta
+
+#below are all from https://github.com/seefun/TorchUtils, thanks seefun to provide such useful tools
 import torch_utils as tu
 
 
@@ -271,3 +273,4 @@ final_preds = stats.mode(all_model_preds, axis=0)[0].squeeze()  # (10000,)
 true_labels = np.array(test_ds.targets)  # (10000,)
 accuracy = (final_preds == true_labels).mean()
 print(f'Ensemble accuracy on CIFAR-10 test set: {accuracy * 100:.2f}%')
+
