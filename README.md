@@ -41,7 +41,7 @@ SSSModel is a lightweight convolutional neural network designed for CIFAR-10 cla
 4. Ensemble inference:
 
    ```bash
-   python ensemble.py
+   python training_process_optimization.py
    ```
 
 ## Experiments and Conclusions
